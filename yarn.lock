@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@a11y/focus-trap@1.0.5":
+  version "1.0.5"
+  resolved "https://registry.npmmirror.com/@a11y/focus-trap/-/focus-trap-1.0.5.tgz#0748189c37ca21255c702aa5de3ee00ed4821d22"
+  integrity sha512-3JOd6g+BALysWS8LNf0qdB8ltR651H/RCLAvUmfS0LIHwHO579XfjZUIZbURYiAZrcbp1CBAq4QZ2YwKNQZ1hw==
+
 "@achrinza/node-ipc@^9.2.5":
   version "9.2.6"
   resolved "https://registry.npmmirror.com/@achrinza/node-ipc/-/node-ipc-9.2.6.tgz#75c89e95fe38ff9e3dd33a0d2681dc28f1c31f33"
@@ -216,6 +221,19 @@
     "@antv/l7-source" "2.11.1"
     "@antv/l7-utils" "2.11.1"
     "@babel/runtime" "^7.7.7"
+
+"@arcgis/core@^4.25.5":
+  version "4.25.5"
+  resolved "https://registry.npmmirror.com/@arcgis/core/-/core-4.25.5.tgz#8737b739c542ad060f55949b2b0ffc746a1b70fb"
+  integrity sha512-c4KgUeXLn11wHoorR4/6UmYxg/sYEJolbWqpio82yCLE0gPBGdXAOSZEgnQ6IuGdjiEU3AJyZg3r16aN80itKQ==
+  dependencies:
+    "@esri/arcgis-html-sanitizer" "~3.0.1"
+    "@esri/calcite-colors" "~6.0.1"
+    "@esri/calcite-components" "1.0.0-beta.97"
+    "@popperjs/core" "~2.11.6"
+    focus-trap "~7.0.0"
+    luxon "~3.0.4"
+    sortablejs "~1.15.0"
 
 "@babel/code-frame@7.12.11":
   version "7.12.11"
@@ -1185,10 +1203,43 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@esri/arcgis-html-sanitizer@~3.0.1":
+  version "3.0.1"
+  resolved "https://registry.npmmirror.com/@esri/arcgis-html-sanitizer/-/arcgis-html-sanitizer-3.0.1.tgz#a4feaf3744bdd532012593fdb929b376a22c39cd"
+  integrity sha512-cwZJwsYCJZwtBQU2AmaiIVFg5nZcVwInPYja1/OgC9iKYO+ytZRoc5h+0S9/ygbFNoS8Nd0RX9A85stLX/BgiA==
+  dependencies:
+    xss "1.0.13"
+
+"@esri/calcite-colors@~6.0.1":
+  version "6.0.1"
+  resolved "https://registry.npmmirror.com/@esri/calcite-colors/-/calcite-colors-6.0.1.tgz#770ec4d77bbbd4da32a66450eb93f4c780c0ff28"
+  integrity sha512-iGUIIpeMCJSTDGw4ZsxLwwxkml0QzOUJTtysjRryGbhSt183NEtwWKS+yQO19utXQz5LbQWjoav6x6CsawElkw==
+
+"@esri/calcite-components@1.0.0-beta.97":
+  version "1.0.0-beta.97"
+  resolved "https://registry.npmmirror.com/@esri/calcite-components/-/calcite-components-1.0.0-beta.97.tgz#ed86ec153cf26d4cc43425b59f52c3fa2bb3a42a"
+  integrity sha512-pvuOQI01DCIr6kS+Jof/b5kLWRaDlYZStP8QUB5r4FYofHHST25iKlOS6525WD4S9xejthfb8S1PehTeMn5Wxg==
+  dependencies:
+    "@a11y/focus-trap" "1.0.5"
+    "@floating-ui/dom" "1.0.3"
+    "@stencil/core" "2.18.1"
+    "@types/color" "3.0.3"
+    color "4.2.3"
+    form-request-submit-polyfill "2.0.0"
+    lodash-es "4.17.21"
+    sortablejs "1.15.0"
+
 "@floating-ui/core@^1.0.1":
   version "1.0.1"
   resolved "https://registry.npmmirror.com/@floating-ui/core/-/core-1.0.1.tgz#00e64d74e911602c8533957af0cce5af6b2e93c8"
   integrity sha512-bO37brCPfteXQfFY0DyNDGB3+IMe4j150KFQcgJ5aBP295p9nBGeHEs/p0czrRbtlHq4Px/yoPXO/+dOCcF4uA==
+
+"@floating-ui/dom@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.npmmirror.com/@floating-ui/dom/-/dom-1.0.3.tgz#b439c8a66436c2cae8d97e889f0b76cce757a6ec"
+  integrity sha512-6H1kwjkOZKabApNtXRiYHvMmYJToJ1DV7rQ3xc/WJpOABhQIOJJOdz2AOejj8X+gcybaFmBpisVTZxBZAM3V0w==
+  dependencies:
+    "@floating-ui/core" "^1.0.1"
 
 "@floating-ui/dom@^1.0.1":
   version "1.0.4"
@@ -1376,6 +1427,11 @@
   resolved "https://registry.npmmirror.com/@sxzz/popperjs-es/-/popperjs-es-2.11.7.tgz#a7f69e3665d3da9b115f9e71671dae1b97e13671"
   integrity sha512-Ccy0NlLkzr0Ex2FKvh2X+OyERHXJ88XJ1MXtsI9y9fGexlaXaVTPzBCRBwIxFkORuOb+uBqeu+RqnpgYTEZRUQ==
 
+"@popperjs/core@~2.11.6":
+  version "2.11.6"
+  resolved "https://registry.npmmirror.com/@popperjs/core/-/core-2.11.6.tgz#cee20bd55e68a1720bdab363ecf0c821ded4cd45"
+  integrity sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==
+
 "@rollup/pluginutils@^5.0.2":
   version "5.0.2"
   resolved "https://registry.npmmirror.com/@rollup/pluginutils/-/pluginutils-5.0.2.tgz#012b8f53c71e4f6f9cb317e311df1404f56e7a33"
@@ -1416,6 +1472,11 @@
   version "1.0.2"
   resolved "https://registry.npmmirror.com/@soda/get-current-script/-/get-current-script-1.0.2.tgz#a53515db25d8038374381b73af20bb4f2e508d87"
   integrity sha512-T7VNNlYVM1SgQ+VsMYhnDkcGmWhQdL0bDyGm5TlQ3GBXnJscEClUUOKduWTmm2zCnvNLC1hc3JpuXjs/nFOc5w==
+
+"@stencil/core@2.18.1":
+  version "2.18.1"
+  resolved "https://registry.npmmirror.com/@stencil/core/-/core-2.18.1.tgz#f45e99b7abe2a0fa90d3141363601a68df5c08a7"
+  integrity sha512-/fXkh1lwZ+X9JQCw50mPjhBogzEHOBvVC5pLoDLZqodVYK0DGWILM2YLV4dcIUBNEK8/HMDpO/Rq81/rS3mNOw==
 
 "@trysound/sax@0.2.0":
   version "0.2.0"
@@ -1506,6 +1567,25 @@
   integrity sha512-p7ienRMiS41Nu2/igbJxxLDWrSZ0WxM8UQgCeO9KhoVF7cOVFkrKsiDr1EsJIla8vV3oEEjGcz11jc5yimhzZw==
   dependencies:
     "@types/node" "*"
+
+"@types/color-convert@*":
+  version "2.0.0"
+  resolved "https://registry.npmmirror.com/@types/color-convert/-/color-convert-2.0.0.tgz#8f5ee6b9e863dcbee5703f5a517ffb13d3ea4e22"
+  integrity sha512-m7GG7IKKGuJUXvkZ1qqG3ChccdIM/qBBo913z+Xft0nKCX4hAU/IxKwZBU4cpRZ7GS5kV4vOblUkILtSShCPXQ==
+  dependencies:
+    "@types/color-name" "*"
+
+"@types/color-name@*":
+  version "1.1.1"
+  resolved "https://registry.npmmirror.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
+  integrity sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
+
+"@types/color@3.0.3":
+  version "3.0.3"
+  resolved "https://registry.npmmirror.com/@types/color/-/color-3.0.3.tgz#e6d8d72b7aaef4bb9fe80847c26c7c786191016d"
+  integrity sha512-X//qzJ3d3Zj82J9sC/C18ZY5f43utPbAJ6PhYt/M7uG6etcF6MRpKdN880KBy43B0BMzSfeT96MzrsNjFI3GbA==
+  dependencies:
+    "@types/color-convert" "*"
 
 "@types/connect-history-api-fallback@^1.3.5":
   version "1.3.5"
@@ -2766,10 +2846,26 @@ color-name@1.1.3:
   resolved "https://registry.npmmirror.com/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
   integrity sha512-72fSenhMw2HZMTVHeCA9KCmpEIbzWiQsjN+BHcBbS9vr1mtt+vJjPdksIBNUmKAW8TFUDPJK5SUU3QhE9NEXDw==
 
-color-name@~1.1.4:
+color-name@^1.0.0, color-name@~1.1.4:
   version "1.1.4"
   resolved "https://registry.npmmirror.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
+
+color-string@^1.9.0:
+  version "1.9.1"
+  resolved "https://registry.npmmirror.com/color-string/-/color-string-1.9.1.tgz#4467f9146f036f855b764dfb5bf8582bf342c7a4"
+  integrity sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==
+  dependencies:
+    color-name "^1.0.0"
+    simple-swizzle "^0.2.2"
+
+color@4.2.3:
+  version "4.2.3"
+  resolved "https://registry.npmmirror.com/color/-/color-4.2.3.tgz#d781ecb5e57224ee43ea9627560107c0e0c6463a"
+  integrity sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==
+  dependencies:
+    color-convert "^2.0.1"
+    color-string "^1.9.0"
 
 colord@^2.9.1:
   version "2.9.3"
@@ -2781,7 +2877,7 @@ colorette@^2.0.10:
   resolved "https://registry.npmmirror.com/colorette/-/colorette-2.0.19.tgz#cdf044f47ad41a0f4b56b3a0d5b4e6e1a2d5a798"
   integrity sha512-3tlv/dIP7FWvj3BsbHrGLJ6l/oKh1O3TcgBqMn+yyCagOxc23fyzDS6HypQbgxWbkpDnf52p1LuR4eWDQ/K9WQ==
 
-commander@2, commander@^2.20.0:
+commander@2, commander@^2.20.0, commander@^2.20.3:
   version "2.20.3"
   resolved "https://registry.npmmirror.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
@@ -3005,6 +3101,11 @@ cssesc@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmmirror.com/cssesc/-/cssesc-3.0.0.tgz#37741919903b868565e1c09ea747445cd18983ee"
   integrity sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==
+
+cssfilter@0.0.10:
+  version "0.0.10"
+  resolved "https://registry.npmmirror.com/cssfilter/-/cssfilter-0.0.10.tgz#c6d2672632a2e5c83e013e6864a42ce8defd20ae"
+  integrity sha512-FAaLDaplstoRsDR8XGYH51znUN0UY7nMc6Z9/fvE8EXGwvJE9hu7W2vHwx1+bd6gCYnln9nLbzxFTrcO9YQDZw==
 
 cssnano-preset-default@^5.2.13:
   version "5.2.13"
@@ -3847,10 +3948,22 @@ flatted@^3.1.0:
   resolved "https://registry.npmmirror.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
   integrity sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==
 
+focus-trap@~7.0.0:
+  version "7.0.0"
+  resolved "https://registry.npmmirror.com/focus-trap/-/focus-trap-7.0.0.tgz#4e2cd9aab5b673e2cbad945c52bd232f6160c2cb"
+  integrity sha512-uT4Bl8TwU+5vVAx/DHil/1eVS54k9unqhK/vGy2KSh7esPmqgC0koAB9J2sJ+vtj8+vmiFyGk2unLkhNLQaxoA==
+  dependencies:
+    tabbable "^6.0.0"
+
 follow-redirects@^1.0.0:
   version "1.15.2"
   resolved "https://registry.npmmirror.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
   integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
+
+form-request-submit-polyfill@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmmirror.com/form-request-submit-polyfill/-/form-request-submit-polyfill-2.0.0.tgz#2557c9c2385989954461e327e81619993b5bce96"
+  integrity sha512-p0+M92y2gFnP0AuuL8VJ0GYVzAT0bYp3GsSkmPFhvUopdnfDLP/9xplQTBBc4w8qOjKRzdK7GaFcdL9IhlXdTQ==
 
 forwarded@0.2.0:
   version "0.2.0"
@@ -4294,6 +4407,11 @@ is-arrayish@^0.2.1:
   resolved "https://registry.npmmirror.com/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
   integrity sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==
 
+is-arrayish@^0.3.1:
+  version "0.3.2"
+  resolved "https://registry.npmmirror.com/is-arrayish/-/is-arrayish-0.3.2.tgz#4574a2ae56f7ab206896fb431eaeed066fdf8f03"
+  integrity sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==
+
 is-binary-path@~2.1.0:
   version "2.1.0"
   resolved "https://registry.npmmirror.com/is-binary-path/-/is-binary-path-2.1.0.tgz#ea1f7f3b80f064236e83470f86c09c254fb45b09"
@@ -4666,7 +4784,7 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
-lodash-es@^4.17.21:
+lodash-es@4.17.21, lodash-es@^4.17.21:
   version "4.17.21"
   resolved "https://registry.npmmirror.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
   integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
@@ -4759,6 +4877,11 @@ lru-cache@^6.0.0:
   integrity sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==
   dependencies:
     yallist "^4.0.0"
+
+luxon@~3.0.4:
+  version "3.0.4"
+  resolved "https://registry.npmmirror.com/luxon/-/luxon-3.0.4.tgz#d179e4e9f05e092241e7044f64aaa54796b03929"
+  integrity sha512-aV48rGUwP/Vydn8HT+5cdr26YYQiUZ42NM6ToMoaGKwYfWbfLeRkEu1wXWMHBZT6+KyLfcbbtVcoQFCbbPjKlw==
 
 magic-string@^0.25.7:
   version "0.25.9"
@@ -6204,6 +6327,13 @@ signal-exit@^3.0.0, signal-exit@^3.0.2, signal-exit@^3.0.3:
   resolved "https://registry.npmmirror.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
 
+simple-swizzle@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.npmmirror.com/simple-swizzle/-/simple-swizzle-0.2.2.tgz#a4da6b635ffcccca33f70d17cb92592de95e557a"
+  integrity sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==
+  dependencies:
+    is-arrayish "^0.3.1"
+
 sirv@^1.0.7:
   version "1.0.19"
   resolved "https://registry.npmmirror.com/sirv/-/sirv-1.0.19.tgz#1d73979b38c7fe91fcba49c85280daa9c2363b49"
@@ -6235,6 +6365,11 @@ sockjs@^0.3.24:
     faye-websocket "^0.11.3"
     uuid "^8.3.2"
     websocket-driver "^0.7.4"
+
+sortablejs@1.15.0, sortablejs@~1.15.0:
+  version "1.15.0"
+  resolved "https://registry.npmmirror.com/sortablejs/-/sortablejs-1.15.0.tgz#53230b8aa3502bb77a29e2005808ffdb4a5f7e2a"
+  integrity sha512-bv9qgVMjUMf89wAvM6AxVvS/4MX3sPeN0+agqShejLU5z5GX4C75ow1O2e5k4L6XItUyAK3gH6AxSbXrOM5e8w==
 
 source-map-js@^1.0.2:
   version "1.0.2"
@@ -6475,6 +6610,11 @@ svgo@^2.7.0:
     csso "^4.2.0"
     picocolors "^1.0.0"
     stable "^0.1.8"
+
+tabbable@^6.0.0:
+  version "6.0.1"
+  resolved "https://registry.npmmirror.com/tabbable/-/tabbable-6.0.1.tgz#427a09b13c83ae41eed3e88abb76a4af28bde1a6"
+  integrity sha512-SYJSIgeyXW7EuX1ytdneO5e8jip42oHWg9xl/o3oTYhmXusZVgiA+VlPvjIN+kHii9v90AmzTZEBcsEvuAY+TA==
 
 table@^6.0.9:
   version "6.8.1"
@@ -7079,6 +7219,14 @@ ws@^8.4.2:
   version "8.11.0"
   resolved "https://registry.npmmirror.com/ws/-/ws-8.11.0.tgz#6a0d36b8edfd9f96d8b25683db2f8d7de6e8e143"
   integrity sha512-HPG3wQd9sNQoT9xHyNCXoDUa+Xw/VevmY9FoHyQ+g+rrMn4j6FB4np7Z0OhdTgjx6MgQLK7jwSy1YecU1+4Asg==
+
+xss@1.0.13:
+  version "1.0.13"
+  resolved "https://registry.npmmirror.com/xss/-/xss-1.0.13.tgz#6e48f616128b39f366dfadc57411e1eb5b341c6c"
+  integrity sha512-clu7dxTm1e8Mo5fz3n/oW3UCXBfV89xZ72jM8yzo1vR/pIS0w3sgB3XV2H8Vm6zfGnHL0FzvLJPJEBhd86/z4Q==
+  dependencies:
+    commander "^2.20.3"
+    cssfilter "0.0.10"
 
 y18n@^5.0.5:
   version "5.0.8"
